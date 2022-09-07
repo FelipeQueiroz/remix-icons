@@ -17,13 +17,13 @@
   },
   "author": "Felipe Queiroz",
   "license": "MIT",
-  "homepage": "https://github.com/FelipeQueiroz/td-icons-v2#readme",
+  "homepage": "https://github.com/FelipeQueiroz/remix-icons#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FelipeQueiroz/td-icons-v2.git"
+    "url": "git+https://github.com/FelipeQueiroz/remix-icons.git"
   },
   "bugs": {
-    "url": "https://github.com/FelipeQueiroz/td-icons-v2/issues"
+    "url": "https://github.com/FelipeQueiroz/remix-icons/issues"
   },
   "keywords": [
     "icons",
