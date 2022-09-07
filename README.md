@@ -1,26 +1,37 @@
-# @fq/figma-to-react-svg: A SVG React generator lib.
+# react-remix-icons
 
-The purpose of the library is to make it possible to export icons from a given Figma file and transform all customizable icons into svg's and then into react components.
+This package provides the Remix Icons packaged as a set of React components.
+
 
 
 
 
 ## Installation
 
-First you must to clone and install all the development dependencies to get started.
+Install the package in your project directory with:
+
+npm:
 
 ```bash
-  git clone https://github.com/FelipeQueiroz/-fq-figma-to-react-svg.git
-  npm install -fq-figma-to-react-svg
-  cd -fq-figma-to-react-svg
+  npm install react-remix-icons
 ```
 
-Second you must go to your Figma profile and generate a access token like this image below:
-
-![App Screenshot](https://i.imgur.com/tOV1Vru.png)
-
-Then you need to enter figma and enter the file that contains the icons you want to import into the project, go to the url and get the FILE_ID as in the image below:
+or yarn:
 
 ```bash
-  https://www.figma.com/file/FILE_ID/Icons
+  yarn add react-remix-icons
 ```
+
+
+## Usage/Examples
+
+To see the full list of icons on this library, go to [Remix Icon List](https://remixicon.com/)
+
+```javascript
+import { AccountBoxFill } from 'react-remix-icons'
+
+function App() {
+  return <AccountBoxFill />
+}
+```
+
