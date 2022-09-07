@@ -1,0 +1,12 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="sd-card-fill" clip-path="url(#clip0_8_1680)">
+<g id="Group">
+<path id="Vector" d="M4.293 6.707L9 2H19C19.2652 2 19.5196 2.10536 19.7071 2.29289C19.8946 2.48043 20 2.73478 20 3V21C20 21.2652 19.8946 21.5196 19.7071 21.7071C19.5196 21.8946 19.2652 22 19 22H5C4.73478 22 4.48043 21.8946 4.29289 21.7071C4.10536 21.5196 4 21.2652 4 21V7.414C4.00006 7.14881 4.10545 6.89449 4.293 6.707ZM15 5V9H17V5H15ZM12 5V9H14V5H12ZM9 5V9H11V5H9Z" fill="#121212"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_8_1680">
+<rect width="24" height="24" fill="white"/>
+</clipPath>
+</defs>
+</svg>

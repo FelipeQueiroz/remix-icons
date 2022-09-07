@@ -1,0 +1,48 @@
+{
+  "name": "react-remix-icons",
+  "version": "1.0.0",
+  "description": "This lib transform your figma svgs on react components",
+  "main": "react/index.js",
+  "files": [
+    "react/"
+  ],
+  "scripts": {
+    "import": "FIGMA_TOKEN=figd_I2e96OuY8c5dBol151wEhIU6rpE4iKlXrXKjwHlc npx -p @figma-export/cli -p @figma-export/output-components-as-svg figma-export components CLywL5HVcYdNh9lbt82fp5 -O @figma-export/output-components-as-svg",
+    "bundle": "rollup --config",
+    "clean": "rimraf output outline solid react src sprite package *.tgz",
+    "export": "figma-export use-config figma.config.js",
+    "build": "run-s clean import export bundle",
+    "test": "node test.js"
+  },
+  "author": "Felipe Queiroz",
+  "license": "MIT",
+  "homepage": "https://github.com/FelipeQueiroz/td-icons-v2#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeQueiroz/td-icons-v2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/FelipeQueiroz/td-icons-v2/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "react"
+  ],
+  "devDependencies": {
+    "@figma-export/cli": "^4.4.0",
+    "@figma-export/output-components-as-svg": "^4.4.0",
+    "@figma-export/output-components-as-svgr": "^4.4.0",
+    "@figma-export/transform-svg-with-svgo": "^4.4.0",
+    "@rollup/plugin-typescript": "^8.4.0",
+    "@types/react": "^18.0.18",
+    "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.0.2",
+    "npm-run-all": "^4.1.5",
+    "react": "^18.2.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.79.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.2"
+  }
+}
