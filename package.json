@@ -7,11 +7,12 @@
     "react/"
   ],
   "scripts": {
-    "import": "FIGMA_TOKEN=figd_I2e96OuY8c5dBol151wEhIU6rpE4iKlXrXKjwHlc npx -p @figma-export/cli -p @figma-export/output-components-as-svg figma-export components CLywL5HVcYdNh9lbt82fp5 -O @figma-export/output-components-as-svg",
+    "import": "FIGMA_TOKEN=INSERT_HERE npx -p @figma-export/cli -p @figma-export/output-components-as-svg figma-export components FILE_ID -O @figma-export/output-components-as-svg",
     "bundle": "rollup --config",
     "clean": "rimraf output outline solid react src sprite package *.tgz",
     "export": "figma-export use-config figma.config.js",
     "build": "run-s clean import export bundle",
+    "np": "np",
     "test": "node test.js"
   },
   "author": "Felipe Queiroz",
@@ -38,6 +39,7 @@
     "@types/react": "^18.0.18",
     "cheerio": "^1.0.0-rc.12",
     "dotenv": "^16.0.2",
+    "np": "^7.6.2",
     "npm-run-all": "^4.1.5",
     "react": "^18.2.0",
     "rimraf": "^3.0.2",
