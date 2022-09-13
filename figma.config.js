@@ -29,6 +29,11 @@ module.exports = {
         transformers: [svgo({ multipass: true, plugins:  [
           // You can enable a plugin with just its name.
           'sortAttrs',
+          {
+            name: 'convertColors',
+            active: true,
+            params: {}
+          },
           'convertStyleToAttrs',
           {
             name: 'removeViewBox',
@@ -47,6 +52,7 @@ module.exports = {
               minify: true,
             }
           },
+          
         ] })],
         outputters,
       },
