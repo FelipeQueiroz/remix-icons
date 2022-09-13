@@ -10,7 +10,7 @@ const outputters = [
     require("@figma-export/output-components-as-svgr")({
         getFileExtension: () => ".tsx",
         getComponentName: ({ componentName }) => capitalize(componentName),
-        getSvgrConfig: () => ({ typescript: true, exportType: "default"  }),
+        getSvgrConfig: () => ({ typescript: true, exportType: "default", expandProps: "start", replaceAttrValues: { "#121212":"{props.color}" } }),
         output: "./src",
         getExportTemplate: ({ componentName, pageName }) => {
             return `export { default as ${capitalize(componentName)} } from './${capitalize(componentName)}';`;
@@ -18,13 +18,6 @@ const outputters = [
       }),
 ];
 
-/** @type {import('svgo').PluginConfig[]} */
-const solidSVGOConfig = [
-  { removeDimensions: true },
-  { sortAttrs: true },
-  { removeAttrs: { attrs: "fill" } },
-  { addAttributesToSVGElement: { attribute: { fill: "currentColor" } } },
-];
 
 
 /** @type {import('@figma-export/types').FigmaExportRC} */
@@ -33,7 +26,28 @@ module.exports = {
     ["components", {
         fileId,
         onlyFromPages: ["icons"],
-        transformers: [svgo({ multipass: true, plugins:  [{name: 'preset-default', params: {attrs: 'path:fill'} }] })],
+        transformers: [svgo({ multipass: true, plugins:  [
+          // You can enable a plugin with just its name.
+          'sortAttrs',
+          'convertStyleToAttrs',
+          {
+            name: 'removeViewBox',
+            // Disable a plugin by setting active to false.
+            active: true,
+          },
+          {
+            name: 'removeUnknownsAndDefaults',
+            // Disable a plugin by setting active to false.
+            active: true,
+          },
+          {
+            name: 'cleanupIDs',
+            // Add plugin options.
+            params: {
+              minify: true,
+            }
+          },
+        ] })],
         outputters,
       },
     ],
