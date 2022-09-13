@@ -1,6 +1,6 @@
 {
   "name": "react-remix-icons",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "This lib transform your figma svgs on react components",
   "main": "react/index.js",
   "files": [
