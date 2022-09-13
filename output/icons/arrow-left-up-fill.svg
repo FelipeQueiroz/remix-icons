@@ -1,7 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="arrow-left-up-fill" clip-path="url(#clip0_8_8471)">
 <g id="Group">
-<path id="Vector" d="M12.36 10.947L18.018 16.603L16.603 18.018L10.947 12.361L5.99701 17.311V5.99701H17.31L12.36 10.947Z" fill="#121212"/>
+<path id="Vector" d="M12.36 10.947L18.018 16.603L16.603 18.018L10.947 12.361L5.99701 17.311V5.99701H17.31L12.36 10.947Z" fill="currentColor"/>
 </g>
 </g>
 <defs>

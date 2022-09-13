@@ -33,7 +33,7 @@ module.exports = {
     ["components", {
         fileId,
         onlyFromPages: ["icons"],
-        transformers: [svgo({ multipass: true, plugins: [{name: 'preset-default', solidSVGOConfig}] })],
+        transformers: [svgo({ multipass: true, plugins:  [{name: 'preset-default', params: {attrs: 'path:fill'} }] })],
         outputters,
       },
     ],

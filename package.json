@@ -7,7 +7,7 @@
     "react/"
   ],
   "scripts": {
-    "import": "FIGMA_TOKEN=INSERT_HERE npx -p @figma-export/cli -p @figma-export/output-components-as-svg figma-export components FILE_ID -O @figma-export/output-components-as-svg",
+    "import": "FIGMA_TOKEN=figd_9Hda4pB_61XTZbC3sazk2CT9QZOiCBSJ7uPo-ZRm npx -p @figma-export/cli -p @figma-export/output-components-as-svg figma-export components CLywL5HVcYdNh9lbt82fp5 -O @figma-export/output-components-as-svg",
     "bundle": "rollup --config",
     "clean": "rimraf output outline solid react src sprite package *.tgz",
     "export": "figma-export use-config figma.config.js",

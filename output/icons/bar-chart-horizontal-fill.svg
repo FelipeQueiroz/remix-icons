@@ -1,7 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="bar-chart-horizontal-fill" clip-path="url(#clip0_8_966)">
 <g id="Group">
-<path id="Vector" d="M12 3V7H3V3H12ZM16 17V21H3V17H16ZM22 10V14H3V10H22Z" fill="#121212"/>
+<path id="Vector" d="M12 3V7H3V3H12ZM16 17V21H3V17H16ZM22 10V14H3V10H22Z" fill="currentColor"/>
 </g>
 </g>
 <defs>
